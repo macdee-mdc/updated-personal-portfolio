@@ -1,0 +1,84 @@
+.services-section {
+  padding: 100px 20px;
+  text-align: center;
+  position: relative;
+  z-index: 5;
+}
+
+.services-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 35px;
+  max-width: 1200px;
+  margin: 50px auto 0;
+  padding: 0 20px;
+}
+
+.service-card {
+  position: relative;
+  background: rgba(20, 15, 35, 0.35);
+  border: 1px solid rgba(122, 92, 255, 0.45);
+  backdrop-filter: blur(14px);
+  padding: 35px;
+  border-radius: 14px;
+  box-shadow: 0 0 25px rgba(122, 92, 255, 0.25);
+  transition: 0.4s ease;
+  overflow: hidden;
+}
+
+.service-card:hover {
+  transform: translateY(-12px) scale(1.03);
+  box-shadow: 0 0 50px rgba(122, 92, 255, 0.55);
+}
+
+.service-scan {
+  position: absolute;
+  top: -120%;
+  left: 0;
+  width: 100%;
+  height: 120%;
+  background: linear-gradient(
+    to bottom,
+    rgba(122, 92, 255, 0) 0%,
+    rgba(122, 92, 255, 0.35) 50%,
+    rgba(122, 92, 255, 0) 100%
+  );
+  filter: blur(8px);
+  animation: scanMove 4s linear infinite;
+  pointer-events: none;
+}
+
+@keyframes scanMove {
+  0% {
+    top: -120%;
+  }
+  100% {
+    top: 120%;
+  }
+}
+
+.service-card h3 {
+  font-family: var(--font-title);
+  font-size: 1.4rem;
+  color: var(--purple-light);
+  letter-spacing: 1px;
+  margin-bottom: 12px;
+}
+
+.service-card p {
+  color: var(--text-dim);
+  font-size: 0.95rem;
+  line-height: 1.5;
+  margin-bottom: 18px;
+}
+
+.price-range {
+  display: inline-block;
+  padding: 6px 12px;
+  background: rgba(122, 92, 255, 0.2);
+  border: 1px solid rgba(122, 92, 255, 0.45);
+  color: var(--purple-light);
+  border-radius: 8px;
+  font-weight: 600;
+  font-size: 0.9rem;
+}
