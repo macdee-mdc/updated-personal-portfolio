@@ -3,12 +3,62 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Macdonald David Chiroro</title>
+
+    <title>Macdonald David Chiroro | Macrocode Nexora</title>
+
+    <meta name="title" content="Macdonald David Chiroro | Macrocode Nexora" />
+    <meta
+      name="description"
+      content="Portfolio of Macdonald David Chiroro — Web Developer and founder of Macrocode Nexora. Explore my projects, skills, certifications, and creative journey in building modern digital experiences."
+    />
+    <meta
+      name="keywords"
+      content="Macdonald David Chiroro, Macrocode Nexora, web developer, front-end developer, back-end developer, portfolio, JavaScript, React, HTML, CSS, FreeCodeCamp, DEE LAB, responsive web design, Zimbabwe developer"
+    />
+    <meta name="author" content="Macdonald David Chiroro" />
+    <meta name="robots" content="index, follow" />
+
+    <meta name="theme-color" content="#9d76ff" />
+
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:title"
+      content="Macdonald David Chiroro | Macrocode Nexora"
+    />
+    <meta
+      property="og:description"
+      content="Welcome to the portfolio of Macdonald David Chiroro — Web Developer & Designer at Macrocode Nexora. Let's build something remarkable."
+    />
+    <meta property="og:url" content="https://macdavidchiroro.netlify.app" />
+    <meta
+      property="og:image"
+      content="https://macrocode-nexora.vercel.app/assets/preview.png"
+    />
+    <meta property="og:locale" content="en_US" />
+
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:creator" content="@macrocode_nexora" />
+    <meta
+      name="twitter:title"
+      content="Macdonald David Chiroro | Macrocode Nexora"
+    />
+    <meta
+      name="twitter:description"
+      content="Portfolio of Web Developer Macdonald David Chiroro — showcasing innovative web solutions and creative digital projects."
+    />
+    <meta
+      name="twitter:image"
+      content="https://macrocode-nexora.vercel.app/assets/preview.png"
+    />
+
+    <link rel="icon" type="image/png" href="assets/favicon.png" />
+    <link rel="apple-touch-icon" href="assets/favicon.png" />
 
     <link
       href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600;800&family=Inter:wght@300;400;500;700&display=swap"
       rel="stylesheet"
     />
+
     <script
       src="https://kit.fontawesome.com/30c4ef87be.js"
       crossorigin="anonymous"
@@ -22,10 +72,11 @@
     <link rel="stylesheet" href="styles/services.css" />
     <link rel="stylesheet" href="styles/contact.css" />
     <link rel="stylesheet" href="styles/footer.css" />
+    <link rel="stylesheet" href="styles/certs.css" />
     <link rel="stylesheet" href="styles/responsive.css" />
   </head>
+
   <body>
-    <!-- NAVBAR -->
     <header class="navbar">
       <div class="nav-inner">
         <div class="nav-brand">MACROCODE NEXORA</div>
@@ -34,7 +85,7 @@
           <a href="#about">About</a>
           <a href="#skills">Skills</a>
           <a href="#projects">Projects</a>
-          <a href="#certs">Certifications</a>
+          <a href="#certifications">Certifications</a>
           <a href="#contact">Contact</a>
         </nav>
 
@@ -46,16 +97,14 @@
       </div>
     </header>
 
-    <!-- MOBILE MENU -->
     <div class="mobile-menu" id="mobile-menu">
       <a href="#about">About</a>
       <a href="#skills">Skills</a>
       <a href="#projects">Projects</a>
-      <a href="#certs">Certifications</a>
+      <a href="#certifications">Certifications</a>
       <a href="#contact">Contact</a>
     </div>
 
-    <!-- HERO SECTION -->
     <section class="hero">
       <canvas id="hero-canvas"></canvas>
 
@@ -68,7 +117,6 @@
       </div>
     </section>
 
-    <!-- ABOUT SECTION -->
     <section id="about" class="about-section fade-up">
       <canvas id="about-nebula"></canvas>
       <canvas id="about-fog-canvas"></canvas>
@@ -82,8 +130,10 @@
           <h3 class="about-role">Software Developer & Problem Solver</h3>
 
           <p class="about-bio">
-            A forward-thinking software developer with a BSc in Computer Engineering, passionate about building
-            immersive, efficient, scalable digital experiences and three years of experience. I enjoy
+            A forward-thinking software developer with a BSc in Computer
+            Engineering from European University of Lefke (Northern Cyprus,
+            Turkey), passionate about building immersive, efficient, scalable
+            digital experiences and three years of experience. I enjoy
             transforming ideas into futuristic, user-focused solutions using
             clean, elegant code.
           </p>
@@ -114,7 +164,6 @@
       <h2 class="section-title text-header-skills">My Skills</h2>
 
       <div class="skills-container">
-        <!-- Skill Card -->
         <div class="skill-card">
           <h3>JavaScript</h3>
           <div class="skill-bar">
@@ -265,8 +314,7 @@
     <section id="projects" class="projects-section fade-up">
       <h2 class="section-title text-header">My Projects</h2>
 
-      <div class="projects-container" id="projects-container">
-      </div>
+      <div class="projects-container" id="projects-container"></div>
 
       <div class="section-divider-projects">
         <span></span>
@@ -286,9 +334,93 @@
       </div>
     </div>
 
+    <section id="certifications" class="cert-section reveal">
+      <h2 class="section-title text-header-certs">
+        Certifications & Achievements
+      </h2>
+      <div class="section-divider"></div>
+
+      <div class="cert-container">
+        <div class="cert-card" data-image="images/web-design.png">
+          <img
+            src="images/web-design.png"
+            alt="Responsive Web Design Certificate"
+          />
+          <h3>Responsive Web Design</h3>
+          <p>
+            Mastered modern responsive design principles using HTML5, CSS3, and
+            Flexbox/Grid.
+          </p>
+          <span class="cert-issuer">FreeCodeCamp</span>
+        </div>
+
+        <div class="cert-card" data-image="images/front-end.png">
+          <img
+            src="images/front-end.png"
+            alt="Front End Libraries Certificate"
+          />
+          <h3>Front End Libraries</h3>
+          <p>
+            Built interactive UIs using React, Bootstrap, jQuery, and advanced
+            CSS frameworks.
+          </p>
+          <span class="cert-issuer">FreeCodeCamp</span>
+        </div>
+
+        <div class="cert-card" data-image="images/javascript.png">
+          <img
+            src="images/javascript.png"
+            alt="JavaScript Algorithms Certificate"
+          />
+          <h3>JavaScript Algorithms & Data Structures</h3>
+          <p>
+            Developed algorithmic logic, ES6 proficiency, and problem-solving
+            mastery with JavaScript.
+          </p>
+          <span class="cert-issuer">FreeCodeCamp</span>
+        </div>
+
+        <div class="cert-card" data-image="images/back-end.png">
+          <img
+            src="images/back-end.png"
+            alt="Back End Development and APIs Certificate"
+          />
+          <h3>Back End Development & APIs</h3>
+          <p>
+            Built RESTful APIs and full-stack apps using Node.js, Express,
+            MongoDB, and authentication systems.
+          </p>
+          <span class="cert-issuer">FreeCodeCamp</span>
+        </div>
+
+        <div class="cert-card" data-image="images/labelling.png">
+          <img
+            src="images/labelling.png"
+            alt="Image Labelling Essentials Certificate"
+          />
+          <h3>Image Labelling Essentials</h3>
+          <p>
+            Trained in AI dataset preparation, image annotation, and model-ready
+            data processing.
+          </p>
+          <span class="cert-issuer">DEE LAB</span>
+        </div>
+      </div>
+
+      <div id="cert-lightbox" class="cert-lightbox">
+        <span class="close-lightbox">&times;</span>
+        <img class="lightbox-image" src="" alt="Certificate Preview" />
+      </div>
+      <div class="section-divider-projects">
+        <span></span>
+      </div>
+    </section>
+
     <section id="contact" class="contact-section reveal fade-up">
       <div class="contact-header">
-        <h2 class="section-title text-header text-header-phone">Get In Touch</h2>
+        <h2 class="section-title text-header text-header-phone">
+          Get In Touch
+        </h2>
         <p class="contact-subtext">
           Have a project in mind? Let's collaborate and bring it to life.
         </p>
@@ -368,16 +500,22 @@
             <a href="https://wa.me/263778853159" target="_blank"
               ><i class="fa-brands fa-whatsapp"></i
             ></a>
-            <a href="https://instagram.com/macdee_215_dc?igshid=YTQwZjQ0NmI0OA%3D%3D&utm_source=qr" target="_blank"
+            <a
+              href="https://instagram.com/macdee_215_dc?igshid=YTQwZjQ0NmI0OA%3D%3D&utm_source=qr"
+              target="_blank"
               ><i class="fa-brands fa-instagram"></i
             ></a>
-            <a href="https://www.facebook.com/macdonald.david.12?mibextid=LQQJ4d" target="_blank"
+            <a
+              href="https://www.facebook.com/macdonald.david.12?mibextid=LQQJ4d"
+              target="_blank"
               ><i class="fa-brands fa-facebook"></i
             ></a>
             <a href="https://twitter.com/215Macdee" target="_blank"
               ><i class="fa-brands fa-x-twitter"></i
             ></a>
-            <a href="https://www.tiktok.com/@macdee_dc?_t=8riB2TP8Ro0&_r=1" target="_blank"
+            <a
+              href="https://www.tiktok.com/@macdee_dc?_t=8riB2TP8Ro0&_r=1"
+              target="_blank"
               ><i class="fa-brands fa-tiktok"></i
             ></a>
           </div>
@@ -391,7 +529,7 @@
 
     <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
     <script>
-      emailjs.init("UFk47_GgJO84ITNKH"); // Replace this with your EmailJS Public Key
+      emailjs.init("UFk47_GgJO84ITNKH");
     </script>
 
     <script src="js/main.js"></script>
@@ -399,6 +537,7 @@
     <script src="js/aboutNebula.js"></script>
     <script src="js/projects.js"></script>
     <script src="js/message.js"></script>
+    <script src="js/lightbox.js"></script>
     <script src="js/footerNebula.js"></script>
   </body>
 </html>
